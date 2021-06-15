@@ -1,4 +1,4 @@
-# go-sparsebundle
+# go-sparsebundle [![Go Reference](https://pkg.go.dev/badge/github.com/threez/go-sparsebundle.svg)](https://pkg.go.dev/github.com/threez/go-sparsebundle) 
 
 Direct access to the sparse bundle format using golang using cgo.
 
@@ -25,7 +25,8 @@ defer b.Close()
 
 ## Test
 
-There are two test files
+There are a few test files
 
-* `tests/empty.sparsebundle` an empty sparse bundle
+* `tests/empty.sparsebundle` an almost empty file with only 10 bytes written
+* `tests/FAT10.sparsebundle` a 10 MB GPT FAT file
 * `tests/test.sparsebundle` an encrypted sparse bundle with a single file in it
