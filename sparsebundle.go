@@ -86,6 +86,9 @@ func (b *Bundle) Read(p []byte) (n int, err error) {
 		return
 	}
 	b.offset += int64(n)
+	if b.offset == b.Size() {
+		return n, io.EOF
+	}
 	return
 }
 
